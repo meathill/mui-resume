@@ -1,0 +1,22 @@
+.bi {
+  --width: 1em;
+  --icon: '';
+  background-color: currentColor;
+  display: inline-block;
+  mask-size: var(--width) var(--width);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-image: var(--icon);
+}
+.bi::before {
+  display: inline-block;
+  content: '';
+  width: var(--width);
+}
+.bi-fw {
+  --width: 1.513333em;
+}
+
+.bi-save-fill {
+  --icon: url('assets/bs-icons/save-fill.svg')
+}
