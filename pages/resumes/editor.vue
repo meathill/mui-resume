@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import {ref} from 'vue';
+import type {ProjectExperience} from "~/types/cv";
+import ProjectExperiencesComponent from "~/components/ProjectExperiences.vue";
 
 const fullname = ref<string>('');
 const title = ref<string>('');
@@ -8,6 +10,7 @@ const email = ref<string>('');
 const wechat = ref<string>('');
 const location = ref<string>('');
 const aboutMe = ref<string>('');
+const projectExperiences = ref<ProjectExperience[]>([]);
 
 function doPreview() {
 
@@ -44,23 +47,41 @@ export default {
         li.menu-title
           span 简历大纲
         li
-          a(href="#key-info") 重点信息
+          a(href="#key-info")
+            i.bi.bi-star-fill.mr-1
+            | 重点信息
         li
-          a(href="#about-me") 求职信
+          a(href="#about-me")
+            i.bi.bi-star-fill.mr-1
+            | 求职信
         li
-          a(href="experience") 项目经验
+          a(href="project-exp")
+            i.bi.bi-star-fill.mr-1
+            | 项目经验
         li
-          a(href="jobs") 工作经验
+          a(href="jobs")
+            i.bi.bi-star-half.mr-1
+            | 工作经验
         li
-          a(href="education") 教育经历
+          a(href="education")
+            i.bi.bi-star-half.mr-1
+            | 教育经历
         li
-          a(href="skills") 技能清单
+          a(href="skills")
+            i.bi.bi-star.mr-1
+            | 技能清单
         li
-          a(href="awards") 获奖情况
+          a(href="awards")
+            i.bi.bi-blank.mr-1
+            | 获奖情况
         li
-          a(href="education") 个人信息
+          a(href="extra-info")
+            i.bi.bi-blank.mr-1
+            | 个人信息
         li
-          a(href="thanks") 致谢
+          a(href="thanks")
+            i.bi.bi-star.mr-1
+            | 致谢
 
     .flex-1.ml-4
       fieldset#key-info.card.bg-base-200.shadow-xl.mb-4
@@ -128,7 +149,7 @@ export default {
             | 请留下别人能联系到你的方式，包括手机、微信、邮箱等。
 
       fieldset#about-me.card.bg-base-200.shadow-xl.mb-4
-        legend.bg-primary.px-6.py-2.rounded-lg.ml-4.text-primary-content.text-lg 求职信
+        legend.bg-primary.px-6.py-2.rounded-lg.ml-4.text-primary-content.text-lg(for="about-me-input") 求职信
         .card-body
           .form-control.mb-2
             textarea#about-me-input.textarea.textarea-bordered.h-24(
@@ -137,10 +158,12 @@ export default {
               required
               v-model="aboutMe"
             )
-          p.text-sm.text-gray-500 求职信，让招聘方能够对你有初步了解，重点是把你和其他求职者区分开，让你的形象更加具体，更像一个人，而不是某个概念物。
+          p.text-sm.text-gray-500 求职信，让招聘方能够对你有初步了解，重点是把你和其他求职者区分开，让你的形象更加具体，更像一个人，而不是某个概念产物。
             br
             | 不要太长，但要包含一些关键词。
 
-      fieldset#experience.mb-4
-
+      fieldset#project-exp.card.bg-base-200.shadow-xl.mb-4
+        legend.bg-primary.px-6.py-2.rounded-lg.ml-4.text-primary-content.text-lg 项目经验
+        .card-body
+          project-experiences-component(v-model="projectExperiences")
 </template>

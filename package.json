@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@pinia/nuxt": "^0.4.6",
     "@tailwindcss/typography": "^0.5.8",
     "autoprefixer": "^10.4.13",
     "daisyui": "^2.42.0",

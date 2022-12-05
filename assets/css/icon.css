@@ -16,7 +16,22 @@
 .bi-fw {
   --width: 1.513333em;
 }
+.bi-blank {
+  visibility: hidden;
+}
 
 .bi-save-fill {
   --icon: url('assets/bs-icons/save-fill.svg')
+}
+.bi-star-fill {
+  --icon: url('assets/bs-icons/star-fill.svg')
+}
+.bi-star-half {
+  --icon: url('assets/bs-icons/star-half.svg')
+}
+.bi-star {
+  --icon: url('assets/bs-icons/star.svg')
+}
+.bi-plus-lg {
+  --icon: url('assets/bs-icons/plus-lg.svg')
 }
