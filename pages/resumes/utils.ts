@@ -1,6 +1,6 @@
-import type {ProjectExperience} from "~/types/cv";
+import type { ProjectExperience } from '~/types/cv'
 
-export function createNewProjectExperience(): ProjectExperience {
+export function createNewProjectExperience (): ProjectExperience {
   return {
     name: '',
     description: '',
@@ -12,6 +12,6 @@ export function createNewProjectExperience(): ProjectExperience {
     testimony: [],
     startDate: '',
     endDate: '',
-    visible: true,
-  };
+    visible: true
+  }
 }

@@ -1,28 +1,27 @@
 <script lang="ts" setup>
-import type {ProjectExperience} from "~/types/cv";
-import {createNewProjectExperience} from "~/pages/resumes/utils";
+import type { ProjectExperience } from '~/types/cv'
+import { createNewProjectExperience } from '~/pages/resumes/utils'
 
 type Props = {
-  value: ProjectExperience;
+  modelValue: ProjectExperience;
 }
 const props = withDefaults(defineProps<Props>(), {
-  value: () => createNewProjectExperience(),
-});
-const localValue = computed({
-  get() {
-    return props.value;
-  },
-  set(value: ProjectExperience) {
-    Object.assign(props.value, value);
-  },
+  modelValue: () => createNewProjectExperience()
 })
-
+const localValue = computed({
+  get () {
+    return props.modelValue
+  },
+  set (value: ProjectExperience) {
+    Object.assign(props.modelValue, value)
+  }
+})
 
 </script>
 
 <script lang="ts">
 export default {
-  name: 'project-experience-item',
+  name: 'ProjectExperienceItem'
 }
 </script>
 
