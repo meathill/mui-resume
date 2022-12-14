@@ -4,11 +4,13 @@ specifiers:
   '@nuxtjs/eslint-config-typescript': ^12.0.0
   '@pinia/nuxt': ^0.4.6
   '@tailwindcss/typography': ^0.5.8
+  '@types/lodash': ^4.14.191
   autoprefixer: ^10.4.13
   bootstrap-icons: ^1.10.2
   colors.css: ^3.0.0
   daisyui: ^2.42.0
   eslint: ^8.29.0
+  lodash: ^4.17.21
   nuxt: 3.0.0
   postcss: ^8.4.19
   pug: ^3.0.2
@@ -19,12 +21,14 @@ specifiers:
 dependencies:
   bootstrap-icons: 1.10.2
   colors.css: 3.0.0
+  lodash: 4.17.21
   vue: 3.2.45
 
 devDependencies:
   '@nuxtjs/eslint-config-typescript': 12.0.0_ha6vam6werchizxrnqvarmz2zu
   '@pinia/nuxt': 0.4.6_prq2uz4lho2pwp6irk4cfkrxwu
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
+  '@types/lodash': 4.14.191
   autoprefixer: 10.4.13_postcss@8.4.19
   daisyui: 2.42.0_2lwn2upnx27dqeg6hqdu7sq75m
   eslint: 8.29.0
@@ -895,6 +899,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    dev: true
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: true
 
   /@types/node/18.11.9:
@@ -3934,7 +3942,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-symbols/5.1.0:
     resolution: {integrity: sha512-l0x2DvrW294C9uDCoQe1VSU4gf529FkSZ6leBl4TiqZH/e+0R7hSfHQBNut2mNygDgHwvYHfFLn6Oxb3VWj2rA==}

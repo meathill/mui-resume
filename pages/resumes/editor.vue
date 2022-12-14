@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import type { KeyInfo, ProjectExperience } from '~/types/cv'
 import CvAboutMe from '~/components/CvAboutMe.vue'
+import CvAcknowledgement from "~/components/CvAcknowledgement.vue";
 
 const keyInfo = reactive<KeyInfo>({
   fullName: '',
@@ -10,9 +11,10 @@ const keyInfo = reactive<KeyInfo>({
   title: '',
   wechat: '',
   location: ''
-})
-const aboutMe = ref<string>('')
-const projects = ref<ProjectExperience[]>([])
+});
+const aboutMe = ref<string>('');
+const projects = ref<ProjectExperience[]>([]);
+const acknowledgement = ref<string>('');
 
 function doPreview () {
 
@@ -89,4 +91,5 @@ export default {
       cv-key-info(v-model="keyInfo")
       cv-about-me(v-model="aboutMe")
       project-experiences(v-model="projects")
+      cv-acknowledgement(v-model="acknowledgement")
 </template>

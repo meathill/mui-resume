@@ -1,17 +1,18 @@
-import type { ProjectExperience } from '~/types/cv'
+import type { ProjectExperience } from '~/types/cv';
+import uniqueId from 'lodash/uniqueId';
 
 export function createNewProjectExperience (): ProjectExperience {
   return {
+    _id: uniqueId('project_'),
     name: '',
     description: '',
+    role: '',
     link: '',
     images: [],
-    tags: [],
-    highlights: [],
+    highlights: '',
     techStack: [],
-    testimony: [],
     startDate: '',
     endDate: '',
-    visible: true
+    visible: true,
   }
 }
