@@ -9,7 +9,6 @@ export function createNewProjectExperience (): ProjectExperience {
     role: '',
     link: '',
     images: [],
-    highlights: '',
     techStack: [],
     startDate: '',
     endDate: '',

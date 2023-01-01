@@ -31,7 +31,7 @@ export default {
 </script>
 
 <template lang="pug">
-.editor
+.editor(class="md:max-w-1/2")
   app-header
     button.btn.btn-primary(
       type="button"

@@ -34,11 +34,11 @@ cv-card#project-exp.project-experiences(title="项目经验")
     :key="item._id"
     v-model="projectExperiences[index]"
   )
-  button.btn.btn-primary.btn-sm(type="button" @click="doAdd")
+  button.btn.btn-primary.mt-2(type="button" @click="doAdd")
     i.bi.bi-plus-lg.mr-1
     | 添加项目经验
 
-  button.btn.btn-secondary.btn-sm(type="button" @click="doReferExp")
-    i.bi.bi-plus-lg.mr-1
+  button.btn.btn-secondary(type="button" @click="doReferExp")
+    i.bi.bi-link.mr-1
     | 使用已保存的项目经验
 </template>

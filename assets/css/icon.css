@@ -35,3 +35,9 @@
 .bi-plus-lg {
   --icon: url('assets/bs-icons/plus-lg.svg')
 }
+.bi-markdown {
+  --icon: url('assets/bs-icons/markdown.svg')
+}
+.bi-link {
+  --icon: url('assets/bs-icons/link.svg')
+}

@@ -22,7 +22,6 @@ export interface ProjectExperience {
   role: string; // 个人在项目中的角色
   link: string; // 项目链接
   images: string[]; // 项目截图
-  highlights: string; // 项目亮点
   techStack: string[]; // 项目技术栈
   startDate: string; // 项目开始时间
   endDate: string; // 项目结束时间
