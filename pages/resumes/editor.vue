@@ -59,31 +59,31 @@ export default {
             i.bi.bi-star-fill.mr-1
             | 求职信
         li
-          a(href="project-exp")
+          a(href="#project-exp")
             i.bi.bi-star-fill.mr-1
             | 项目经验
         li
-          a(href="jobs")
+          a(href="#jobs")
             i.bi.bi-star-half.mr-1
             | 工作经验
         li
-          a(href="education")
+          a(href="#education")
             i.bi.bi-star-half.mr-1
             | 教育经历
         li
-          a(href="skills")
+          a(href="#skills")
             i.bi.bi-star.mr-1
             | 技能清单
         li
-          a(href="awards")
+          a(href="#awards")
             i.bi.bi-blank.mr-1
             | 获奖情况
         li
-          a(href="extra-info")
+          a(href="#extra-info")
             i.bi.bi-blank.mr-1
             | 个人信息
         li
-          a(href="thanks")
+          a(href="#acknowledgement")
             i.bi.bi-star.mr-1
             | 致谢
 

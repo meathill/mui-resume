@@ -1,9 +1,8 @@
 <template lang="pug">
-.home
-  h1 这是首页
-  App-Alert 将来弄个模版放在这里
+.h-full.min-h-full.flex.flex-col
+  app-header
+    nuxt-link.btn.btn-ghost(to="/about") 关于
+    nuxt-link.btn.btn-primary.ml-4(to="/resumes/my") 我的简历
 
-  .flex
-    nuxt-link(to="/about") 关于
-    nuxt-link(to="/resumes/my") 我的简历
+  app-footer.mt-auto
 </template>

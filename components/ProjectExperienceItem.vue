@@ -15,8 +15,14 @@ const localValue = computed({
   set (value: ProjectExperience) {
     Object.assign(props.modelValue, value)
   }
-})
+});
 
+async function doSave(): Promise<void> {
+
+}
+function doCancel(): void {
+
+}
 </script>
 
 <script lang="ts">
@@ -94,4 +100,12 @@ export default {
       :id="'project-technologies-' + localValue._id"
       v-model="localValue.techStack"
     )
+
+footer.sticky.bg-gray-50.mt-2
+  button.btn.btn-primary(
+    class="w-1/2"
+    type="button"
+    @click="doSave"
+  ) 保存
+  button.btn.btn-ghost.ml-2(type="button" @click="doCancel") 取消
 </template>

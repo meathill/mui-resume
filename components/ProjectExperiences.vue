@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { toRefs } from 'vue'
+import {computed, toRefs} from 'vue'
 import type { ProjectExperience } from '~/types/cv'
 import { createNewProjectExperience } from '~/pages/resumes/utils'
 
@@ -11,10 +11,14 @@ const props = withDefaults(defineProps<Props>(), {
 })
 const {
   modelValue: projectExperiences
-} = toRefs(props)
+} = toRefs(props);
+
+const hasEditItem = computed(() => {
+  return projectExperiences.value.length && projectExperiences.value.some(item => item.isEditing);
+});
 
 function doAdd (): void {
-  projectExperiences.value.push(createNewProjectExperience())
+  projectExperiences.value.push(createNewProjectExperience());
 }
 function doReferExp (): void {
 
@@ -34,7 +38,11 @@ cv-card#project-exp.project-experiences(title="项目经验")
     :key="item._id"
     v-model="projectExperiences[index]"
   )
-  button.btn.btn-primary.mt-2(type="button" @click="doAdd")
+footer(v-if="!hasEditItem")
+  button.btn.btn-primary.mt-2(
+    type="button"
+    @click="doAdd"
+  )
     i.bi.bi-plus-lg.mr-1
     | 添加项目经验
 

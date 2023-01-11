@@ -26,4 +26,5 @@ export interface ProjectExperience {
   startDate: string; // 项目开始时间
   endDate: string; // 项目结束时间
   visible: boolean;
+  isEditing: boolean;
 }

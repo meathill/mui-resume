@@ -13,5 +13,6 @@ export function createNewProjectExperience (): ProjectExperience {
     startDate: '',
     endDate: '',
     visible: true,
+    isEditing: true,
   }
 }

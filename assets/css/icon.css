@@ -41,3 +41,12 @@
 .bi-link {
   --icon: url('assets/bs-icons/link.svg')
 }
+.bi-facebook {
+  --icon: url('assets/bs-icons/facebook.svg')
+}
+.bi-twitter {
+  --icon: url('assets/bs-icons/twitter.svg')
+}
+.bi-youtube {
+  --icon: url('assets/bs-icons/youtube.svg')
+}
