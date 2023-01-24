@@ -8,6 +8,9 @@ footer.footer.items-center.p-4.bg-neutral.text-neutral-content
     img.w-8.h-8.object-cover.rounded-full.mr-2(src="https://evereditor.com/mui2.jpg")
     p Copyright © {{year}} - All right reserved
 
+  .flex.gap-4
+    nuxt-link(to="/about") 关于
+
   .grid-flow-col.gap-4(class="md:place-self-center md:justify-self-end")
     a
       i.bi.bi-facebook

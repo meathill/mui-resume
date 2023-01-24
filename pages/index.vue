@@ -1,5 +1,5 @@
 <template lang="pug">
-.flex-1
+.container.mx-auto.py-6
   h1 姆伊简历
 
 </template>

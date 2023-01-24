@@ -50,3 +50,6 @@
 .bi-youtube {
   --icon: url('assets/bs-icons/youtube.svg')
 }
+.bi-check-lg {
+  --icon: url('assets/bs-icons/check-lg.svg')
+}
