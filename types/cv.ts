@@ -7,14 +7,6 @@ export interface KeyInfo {
   location: string;
 }
 
-export interface Testimony {
-  content: string; // 评价内容
-  title: string; // 评价者头衔
-  name: string; // 评价者姓名
-  avatar: string; // 评价者头像
-  link: string; // 评价者链接
-}
-
 export interface ProjectExperience {
   _id: string;
   name: string; // 项目名称
@@ -27,4 +19,9 @@ export interface ProjectExperience {
   endDate: string; // 项目结束时间
   visible: boolean;
   isEditing: boolean;
+}
+
+export interface Resume {
+  keyInfo: KeyInfo;
+  projectExperiences: ProjectExperience[],
 }

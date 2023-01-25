@@ -47,7 +47,6 @@ section.container.mx-auto.py-6
         th 功能
         th 匿名用户
         th 免费用户
-        th 普通用户
         th 高级会员
     tbody
       tr
@@ -57,13 +56,9 @@ section.container.mx-auto.py-6
         td
           strong 2
         td
-          strong 5
-        td
           strong 无限
       tr
         th 下载简历
-        td
-          i.bi.bi-check-lg.text-green-700
         td
           i.bi.bi-check-lg.text-green-700
         td
@@ -78,13 +73,9 @@ section.container.mx-auto.py-6
           i.bi.bi-check-lg.text-green-700
         td
           i.bi.bi-check-lg.text-green-700
-        td
-          i.bi.bi-check-lg.text-green-700
       tr
         th 分享在线简历
         td
-        td
-          i.bi.bi-check-lg.text-green-700
         td
           i.bi.bi-check-lg.text-green-700
         td
@@ -95,14 +86,10 @@ section.container.mx-auto.py-6
         td
         td
           i.bi.bi-check-lg.text-green-700
-        td
-          i.bi.bi-check-lg.text-green-700
       tr
         th 简历 URL 自定义
         td
         td
-        td
-          i.bi.bi-check-lg.text-green-700
         td
           i.bi.bi-check-lg.text-green-700
       tr
@@ -111,22 +98,16 @@ section.container.mx-auto.py-6
         td
         td
           i.bi.bi-check-lg.text-green-700
-        td
-          i.bi.bi-check-lg.text-green-700
       tr
         th 简历内容分析
         td
         td
         td
           i.bi.bi-check-lg.text-green-700
-        td
-          i.bi.bi-check-lg.text-green-700
       tr
         th 简历匹配度评价
         td
         td
-        td
-          i.bi.bi-check-lg.text-green-700
         td
           i.bi.bi-check-lg.text-green-700
 </template>
