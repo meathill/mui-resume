@@ -10,6 +10,7 @@ footer.footer.items-center.p-4.bg-neutral.text-neutral-content
 
   .flex.gap-4
     nuxt-link(to="/about") 关于
+    a(href="mailto:meathill@foxmail.com" target="_blank") 联系我们
 
   .grid-flow-col.gap-4(class="md:place-self-center md:justify-self-end")
     a

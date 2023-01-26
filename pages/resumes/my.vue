@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import {useResumeStore} from "~/store";
-import {computed} from "vue";
+import {useResumeStore, useUserStore} from "~/store";
 
 const resumeStore = useResumeStore();
-const noResume = computed(() => {
-  return !resumeStore.localResume;
+const userStore = useUserStore();
+const noOnlineResume = computed(() => {
+  return !resumeStore.onlineResumes?.length;
 });
 
 onBeforeMount(() => {
-  if (noResume) {
+  if (!resumeStore.localResume) {
     resumeStore.initLocalResume();
   }
 });
@@ -16,25 +16,14 @@ onBeforeMount(() => {
 
 <template lang="pug">
 .my-resumes.container.mx-auto.py-6
-  // 没有简历
-  .w-full.mx-auto(class="md:w-1/2")(v-if="noResume")
-    h3.text-lg.text-center.mb-4 未找到您的简历。
-    p.text-center.mb-4 您可以选择：
-    .flex.w-full
-      .grid.flex-grow.h-32.card.bg-base-100.rounded-box.place-items-center
-        nuxt-link.btn.btn-primary(
-          to="/resumes/editor"
-        ) 创建本地简历
-      .divider(class="lg:divider-horizontal") OR
-      .grid.flex-grow.h-32.card.bg-base-100.rounded-box.place-items-center
-        button.btn.btn-secondary(
-          type="button"
-        ) 登录以查看在线简历
+  h2.text-xl 在线简历
+  h3.text-lg.mb-4(v-if="noOnlineResume") 未找到您的在线简历。
 
-  div(v-else)
-    h2.text-xl 本地简历
+  user-login-form.max-w-xs
+    span 登录查看在线简历
 
-    // 有本地简历
-    // 有在线简历
-    nuxt-link.btn.btn-primary(to="/resumes/editor") 新建简历
+  .divider
+
+  h2.text-xl 本地简历
+  nuxt-link.btn.btn-primary(to="/resumes/editor") 创建本地简历
 </template>
