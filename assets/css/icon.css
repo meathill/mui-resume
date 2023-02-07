@@ -53,3 +53,6 @@
 .bi-check-lg {
   --icon: url('assets/bs-icons/check-lg.svg')
 }
+.bi-plus-circle {
+  --icon: url('assets/bs-icons/plus-circle.svg')
+}

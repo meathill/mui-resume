@@ -3,18 +3,18 @@ type Props = {
   id: string;
   title: string;
   cardClass?: string;
-}
+};
 const props = withDefaults(defineProps<Props>(), {
   id: '',
   title: '',
-  cardClass: ''
-})
+  cardClass: '',
+});
 </script>
 
 <script lang="ts">
 export default {
-  name: 'AppCard'
-}
+  name: 'AppCard',
+};
 </script>
 
 <template lang="pug">

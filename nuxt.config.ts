@@ -10,12 +10,19 @@ export default defineNuxtConfig({
   ],
   postcss: {
     plugins: {
+      'postcss-import': {},
+      'tailwindcss/nesting': 'postcss-nesting',
       tailwindcss: {},
-      autoprefixer: {}
-    }
+      autoprefixer: {},
+      'postcss-preset-env': {
+        features: {
+          'nesting-rules': false,
+        },
+      },
+    },
   },
   css: [
     '~/assets/css/main.css',
-    '~/assets/css/icon.css'
-  ]
-})
+    '~/assets/css/icon.css',
+  ],
+});

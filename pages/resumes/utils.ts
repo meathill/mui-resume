@@ -1,5 +1,5 @@
-import type { ProjectExperience } from '~/types/cv';
 import uniqueId from 'lodash/uniqueId';
+import type { ProjectExperience } from '~/types/cv';
 
 export function createNewProjectExperience (): ProjectExperience {
   return {
@@ -14,5 +14,5 @@ export function createNewProjectExperience (): ProjectExperience {
     endDate: '',
     visible: true,
     isEditing: true,
-  }
+  };
 }

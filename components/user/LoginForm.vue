@@ -7,7 +7,7 @@ const remember = ref<boolean>(false);
 <script lang="ts">
 export default {
   name: 'LoginForm',
-}
+};
 </script>
 
 <template lang="pug">

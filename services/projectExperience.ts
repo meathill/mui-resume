@@ -1,5 +1,5 @@
-import {ProjectExperience} from "~/types/cv";
+import { ProjectExperience } from '~/types/cv';
 
-export async function getMyProjectExperience(): Promise<ProjectExperience[]> {
+export async function getMyProjectExperience (): Promise<ProjectExperience[]> {
   return Promise.resolve([]);
 }

@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import {useUserStore} from "~/store";
+import { useUserStore } from '~/store';
 
 const userStore = useUserStore();
 </script>
 
 <script lang="ts">
 export default {
-  name: 'AppHeader'
-}
+  name: 'AppHeader',
+};
 </script>
 
 <template lang="pug">

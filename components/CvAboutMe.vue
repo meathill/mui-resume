@@ -1,16 +1,16 @@
 <script lang="ts" setup>
 type Props = {
   modelValue: string;
-}
+};
 const props = withDefaults(defineProps<Props>(), {
-  modelValue: ''
+  modelValue: '',
 });
 </script>
 
 <script lang="ts">
 export default {
-  name: 'CvAboutMe'
-}
+  name: 'CvAboutMe',
+};
 </script>
 
 <template lang="pug">

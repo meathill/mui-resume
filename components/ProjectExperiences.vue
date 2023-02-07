@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-import {computed, toRefs} from 'vue'
-import type { ProjectExperience } from '~/types/cv'
-import { createNewProjectExperience } from '~/pages/resumes/utils'
+import { computed, toRefs } from 'vue';
+import type { ProjectExperience } from '~/types/cv';
+import { createNewProjectExperience } from '~/pages/resumes/utils';
 
 type Props = {
   modelValue: ProjectExperience[];
-}
+};
 const props = withDefaults(defineProps<Props>(), {
-  modelValue: () => [] as ProjectExperience[]
-})
+  modelValue: () => [] as ProjectExperience[],
+});
 const {
-  modelValue: projectExperiences
+  modelValue: projectExperiences,
 } = toRefs(props);
 
 const hasEditItem = computed(() => {
@@ -27,8 +27,8 @@ function doReferExp (): void {
 
 <script lang="ts">
 export default {
-  name: 'ProjectExperiences'
-}
+  name: 'ProjectExperiences',
+};
 </script>
 
 <template lang="pug">

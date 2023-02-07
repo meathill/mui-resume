@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
-import type { KeyInfo, ProjectExperience } from '~/types/cv'
-import CvAboutMe from '~/components/CvAboutMe.vue'
-import CvAcknowledgement from "~/components/CvAcknowledgement.vue";
+import { ref } from 'vue';
+import type { KeyInfo, ProjectExperience } from '~/types/cv';
+import CvAboutMe from '~/components/CvAboutMe.vue';
+import CvAcknowledgement from '~/components/CvAcknowledgement.vue';
 
 const keyInfo = reactive<KeyInfo>({
   fullName: '',
@@ -10,7 +10,7 @@ const keyInfo = reactive<KeyInfo>({
   phone: '',
   title: '',
   wechat: '',
-  location: ''
+  location: '',
 });
 const aboutMe = ref<string>('');
 const projects = ref<ProjectExperience[]>([]);
@@ -26,8 +26,8 @@ function doSave () {
 
 <script lang="ts">
 export default {
-  name: 'ResumeEditor'
-}
+  name: 'ResumeEditor',
+};
 </script>
 
 <template lang="pug">

@@ -6,16 +6,16 @@ module.exports = {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
-    './app.vue'
+    './app.vue',
   ],
   theme: {
-    extend: {}
+    extend: {},
   },
   plugins: [
     require('daisyui'),
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
   ],
   daisyui: {
-    themes: ['light']
-  }
-}
+    themes: ['light'],
+  },
+};

@@ -1,34 +1,34 @@
 <script lang="ts" setup>
-import type { ProjectExperience } from '~/types/cv'
-import { createNewProjectExperience } from '~/pages/resumes/utils'
+import type { ProjectExperience } from '~/types/cv';
+import { createNewProjectExperience } from '~/pages/resumes/utils';
 
 type Props = {
   modelValue: ProjectExperience;
-}
+};
 const props = withDefaults(defineProps<Props>(), {
-  modelValue: () => createNewProjectExperience()
-})
+  modelValue: () => createNewProjectExperience(),
+});
 const localValue = computed({
   get () {
-    return props.modelValue
+    return props.modelValue;
   },
   set (value: ProjectExperience) {
-    Object.assign(props.modelValue, value)
-  }
+    Object.assign(props.modelValue, value);
+  },
 });
 
-async function doSave(): Promise<void> {
+async function doSave (): Promise<void> {
 
 }
-function doCancel(): void {
+function doCancel (): void {
 
 }
 </script>
 
 <script lang="ts">
 export default {
-  name: 'ProjectExperienceItem'
-}
+  name: 'ProjectExperienceItem',
+};
 </script>
 
 <template lang="pug">

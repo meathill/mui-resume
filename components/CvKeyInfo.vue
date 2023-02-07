@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
-import type { KeyInfo } from '~/types/cv'
+import { ref } from 'vue';
+import type { KeyInfo } from '~/types/cv';
 
 type Props = {
   modelValue: KeyInfo;
-}
-const props = defineProps<Props>()
-const localValue = ref(props.modelValue)
+};
+const props = defineProps<Props>();
+const localValue = ref(props.modelValue);
 </script>
 
 <script lang="ts">
 export default {
-  name: 'CvKeyInfo'
-}
+  name: 'CvKeyInfo',
+};
 </script>
 
 <template lang="pug">
