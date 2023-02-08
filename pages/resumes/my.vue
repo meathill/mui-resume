@@ -20,10 +20,12 @@ onBeforeMount(() => {
 
   .divider
 
-  .border-2.border-gray-200.rounded.w-48.h-64.border-dashed.flex.justify-center.items-center
-    nuxt-link.text-center(to="/resumes/new")
+  .flex.gap-8
+    nuxt-link.border-2.border-gray-200.rounded.w-48.h-64.border-dashed.flex.flex-col.justify-center.items-center.text-center(
+      class="hover:bg-gray-50 hover:text-primary-500 hover:border-solid"
+      to="/resumes/editor"
+    )
       i.bi.bi-plus-circle.text-4xl.text-gray-200.mb-4
-      br
       span 创建简历
 
 footer.container.mx-auto.border-t.border-gray-200.py-4

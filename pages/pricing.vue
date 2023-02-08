@@ -52,9 +52,9 @@ section.container.mx-auto.py-6
       tr
         th 简历数量
         td
-          strong 1
+          strong 1（本地）
         td
-          strong 2
+          strong 1
         td
           strong 无限
       tr
@@ -69,6 +69,13 @@ section.container.mx-auto.py-6
         th 导出简历数据
         td
           i.bi.bi-check-lg.text-green-700
+        td
+          i.bi.bi-check-lg.text-green-700
+        td
+          i.bi.bi-check-lg.text-green-700
+      tr
+        th 多设备、多浏览器共享简历
+        td
         td
           i.bi.bi-check-lg.text-green-700
         td
@@ -96,6 +103,14 @@ section.container.mx-auto.py-6
         th 移除在线简历的品牌信息
         td
         td
+        td
+          i.bi.bi-check-lg.text-green-700
+      tr
+        th 简历编写引导
+        td
+          i.bi.bi-check-lg.text-green-700
+        td
+          i.bi.bi-check-lg.text-green-700
         td
           i.bi.bi-check-lg.text-green-700
       tr
