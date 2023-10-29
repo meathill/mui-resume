@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const year = new Date().getFullYear();
+const version = __VERSION__;
 </script>
 
 <template lang="pug">
@@ -7,6 +8,7 @@ footer.footer.items-center.p-4.bg-neutral.text-neutral-content
   .items-center.grid-flow-col
     img.w-8.h-8.object-cover.rounded-full.mr-2(src="https://evereditor.com/mui2.jpg")
     p Copyright © {{year}} - All right reserved
+      span.ml-4 v{{version}}
 
   .flex.gap-4
     nuxt-link(to="/about") 关于

@@ -1,3 +1,5 @@
+import pkg from './package.json' assert { type: 'json' };
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -11,18 +13,19 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       'postcss-import': {},
-      'tailwindcss/nesting': 'postcss-nesting',
+      'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
-      'postcss-preset-env': {
-        features: {
-          'nesting-rules': false,
-        },
-      },
     },
   },
   css: [
     '~/assets/css/main.css',
     '~/assets/css/icon.css',
   ],
+  vite: {
+    define: {
+      __IS_DEV__: process.env.NODE_ENV === 'development',
+      __VERSION__: JSON.stringify(pkg.version),
+    },
+  },
 });
