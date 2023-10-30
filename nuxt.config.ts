@@ -2,6 +2,16 @@ import pkg from './package.json' assert { type: 'json' };
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://unpkg.com/bootstrap-icons@1.11.1/font/bootstrap-icons.css',
+        },
+      ],
+    },
+  },
   modules: [
     [
       '@pinia/nuxt',
@@ -20,7 +30,6 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/css/main.css',
-    '~/assets/css/icon.css',
   ],
   vite: {
     define: {
