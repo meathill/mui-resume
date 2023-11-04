@@ -16,3 +16,9 @@ export function createNewProjectExperience (): ProjectExperience {
     isEditing: true,
   };
 }
+
+export function sleep (duration: number): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(resolve, duration);
+  });
+}

@@ -25,3 +25,12 @@ export interface Resume {
   keyInfo: KeyInfo;
   projectExperiences: ProjectExperience[],
 }
+
+export type MyProfile = {
+  fullName: string;
+  phone: string;
+  email: string;
+  location: string;
+  title: string;
+  wechat: string;
+};

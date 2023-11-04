@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template lang="pug">
-.flex.flex-col.gap-4.container.mx-auto.py-4(class="sm:flex-row")
+.flex.flex-col.gap-4.container.mx-auto.py-8(class="sm:flex-row")
   aside.w-72.flex-none
     ul.menu.bg-base-200.rounded-box
       li
