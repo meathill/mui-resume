@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import { computed, toRefs } from 'vue';
 import type { ProjectExperience } from '~/types/cv';
-import { createNewProjectExperience } from '~/pages/resumes/utils';
 
 type Props = {
   modelValue: ProjectExperience[];

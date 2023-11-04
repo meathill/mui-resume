@@ -1,6 +1,4 @@
-import { ref } from 'vue';
-import { defineStore } from 'pinia';
-import { Resume } from '~/types/cv';
+import { type Resume } from '~/types/cv';
 
 export const LOCAL_RESUME = 'muicv';
 
