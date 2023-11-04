@@ -1,4 +1,4 @@
-import daisyui from "daisyui";
+import daisyui from 'daisyui';
 import Typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
@@ -19,6 +19,7 @@ export default {
     Typography,
   ],
   daisyui: {
-    themes: ['light'],
+    themes: ['winter', 'aqua'],
+    darkTheme: 'aqua',
   },
 };

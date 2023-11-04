@@ -4,6 +4,7 @@ import pkg from './package.json' assert { type: 'json' };
 export default defineNuxtConfig({
   app: {
     head: {
+      title: '姆伊求职助手',
       link: [
         {
           rel: 'stylesheet',
@@ -12,7 +13,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  css: [
+    '~/assets/css/main.css',
+  ],
   modules: [
+    '@sidebase/nuxt-auth',
     [
       '@pinia/nuxt',
       {
@@ -28,9 +33,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: [
-    '~/assets/css/main.css',
-  ],
+  runtimeConfig: {
+    version: pkg.version,
+  },
   vite: {
     define: {
       __IS_DEV__: process.env.NODE_ENV === 'development',

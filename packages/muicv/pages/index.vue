@@ -1,8 +1,8 @@
 <template lang="pug">
 .container.mx-auto
-  .h-96.flex.justify-center.items-center.bg-primary
-    .prose.text-white
-      h1.text-white 姆伊求职助手
+  .h-96.flex.justify-center.items-center.bg-base-200
+    .prose
+      h1 姆伊求职助手
       p.leading-tight 姆伊 AI 帮你找到好工作。
       ul
         li 学会制作好简历
@@ -10,7 +10,7 @@
         li 高效准备面试
         li 全面复盘面试
         li 帮你全网搜索工作机会
-  article.bg-secondary.text-white
+  article.bg-base-300
     h2.text-2xl.font-bold.pt-8.mb-8.text-center 亮点解析
     .h-80(class="lg:px-16 lg:gap-16 lg:grid lg:grid-cols-2 xl:grid-cols-4")
       .flex.flex-col.justify-center.items-center.py-8

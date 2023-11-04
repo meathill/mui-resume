@@ -1,8 +1,5 @@
 <template lang="pug">
 app-header
-  slot(name="actions")
-    nuxt-link.btn.btn-ghost(to="/pricing") 价格
-    nuxt-link.btn.btn-primary.ml-4(to="/resumes/my") 我的简历
 nuxt-page
 app-footer.mt-auto
 </template>

@@ -1,23 +1,30 @@
 <script lang="ts" setup>
-import { useUserStore } from '~/store';
-
-const userStore = useUserStore();
+const { status } = useAuth();
 </script>
+
+<template lang="pug">
+header.bg-base-300
+  .navbar.container.mx-auto
+    .mr-8
+      nuxt-link.btn.btn-ghost.text-xl(to="/")
+        img.w-8.h-8.object-cover.rounded-full(src="https://evereditor.com/mui2.jpg")
+        | 姆伊求职助手
+    .navbar-center
+      ul.menu.menu-horizontal.px-1
+        li
+          nuxt-link(to="/pricing") 价格
+
+    .ml-auto
+      nuxt-link.btn.btn-primary(
+        :to="status === 'authenticated' ? '/app' : '/auth'"
+      )
+        i.bi.bi-stars
+        | 帮我求职
+
+</template>
 
 <script lang="ts">
 export default {
   name: 'AppHeader',
 };
 </script>
-
-<template lang="pug">
-.navbar.bg-base-300
-  .container.mx-auto
-    .flex-1
-      nuxt-link.btn.btn-ghost.text-xl.text-orange-600(to="/")
-        img.w-8.h-8.object-cover.rounded-full.mr-2(src="https://evereditor.com/mui2.jpg")
-        | 姆伊求职助手
-    .flex-none
-      slot
-
-</template>
