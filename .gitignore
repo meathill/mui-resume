@@ -9,3 +9,5 @@ dist
 .idea
 assets/bs-icons
 .vercel
+
+.DS_Store
