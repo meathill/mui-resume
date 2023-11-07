@@ -1,0 +1,30 @@
+{
+  "name": "muicv-cms",
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "type": "module",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.15.0",
+    "@strapi/plugin-users-permissions": "4.15.0",
+    "@strapi/plugin-i18n": "4.15.0",
+    "better-sqlite3": "8.6.0"
+  },
+  "author": {
+    "name": "lt502676921"
+  },
+  "strapi": {
+    "uuid": "166d58b1-461c-4dcc-9f8c-3be6f91cf46a"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

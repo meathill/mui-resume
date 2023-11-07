@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "singularName": "question",
+    "pluralName": "questions",
+    "displayName": "Question",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "richtext",
+      "required": true
+    },
+    "referenceAnswer": {
+      "type": "richtext",
+      "required": true
+    },
+    "options": {
+      "type": "json"
+    },
+    "optionsAnswer": {
+      "type": "string"
+    }
+  }
+}
