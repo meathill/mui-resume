@@ -2,6 +2,7 @@
   "name": "muicv-cms",
   "version": "0.1.0",
   "description": "A Strapi application",
+  "type": "module",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
